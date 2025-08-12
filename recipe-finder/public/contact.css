@@ -1,0 +1,190 @@
+.contact-header {
+    background: linear-gradient(135deg, #b31b57 0%, #ea580c 100%);
+    color: #fff;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background: radial-gradient(circle, #fdefef 0%, #fff2f4);
+}
+
+.info-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: auto auto;
+}
+
+.message {
+    background: linear-gradient(90deg, #ffe6d9 0%, #ffb6b6 100%);
+    border: 2px solid #fe9b9b;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.08);
+    padding: 32px;
+}
+
+.contact-form span {
+    background: linear-gradient(135deg, rgba(255, 224, 200, 0.8), rgba(255, 189, 153, 0.6));
+    color: #b45309;
+    /* Deep orange-brown for better contrast */
+    font-size: 1.05em;
+    font-weight: 600;
+    padding: 18px 24px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    display: block;
+    text-align: left;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(255, 173, 108, 0.1);
+    border-left: 6px solid #fd972b;
+    transition: all 0.3s ease;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #fffefc;
+    border: 1px solid #fcd9c9;
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.1);
+    resize: vertical;
+    min-height: 120px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea:focus {
+    border-color: #ea580c;
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+    outline: none;
+}
+
+.contact-form button {
+    background: linear-gradient(90deg, #ea580c 0%, #b91c1c 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+}
+
+.detailes {
+    background: linear-gradient(90deg, #ffe6d9 0%, #ffb6b6 100%);
+    border: 2px solid #fe9b9b;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 500px;
+    max-height: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.08);
+    padding: 32px;
+}
+
+.detailes ul li {
+    margin-bottom: 8px;
+}
+
+.detailes ul svg {
+    color: #ea580c;
+    margin-right: 8px;
+}
+
+.social-icon {
+    background: linear-gradient(90deg, #ffe6d9 0%, #ffb6b6 100%);
+    border: 2px solid #fe9b9b;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 500px;
+    max-height: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.08);
+    padding: 32px;
+}
+
+.social-icon ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-icon ul li a svg {
+    color: #ea580c;
+    font-size: 22px;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effects */
+.social-icon ul li a:hover {
+    background-color: #ea580c22;
+    /* subtle orange background */
+    color: #ea580c;
+    /* brand color on hover */
+    transform: translateY(-3px);
+}
+
+.social-icon ul li a:hover i {
+    transform: scale(1.2);
+}
+
+/* Specific brand colors for icons */
+.social-icon ul li a[href*="facebook"] i {
+    color: #3b5998;
+}
+
+.social-icon ul li a[href*="twitter"] i {
+    color: #1da1f2;
+}
+
+.social-icon ul li a[href*="instagram"] i {
+    color: #e4405f;
+    transition: color 0.3s;
+}

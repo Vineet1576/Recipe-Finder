@@ -1,0 +1,311 @@
+/* General Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #d1323e;
+    --accent-light: #fff5e6;
+    --bg-light: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --radius-lg: 1.5rem;
+    --radius-md: 1rem;
+    --radius-sm: 0.5rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    color: var(--primary-color);
+}
+
+/* Profile Page Main Container */
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 1rem 2rem;
+    background-color: transparent;
+}
+
+/* Profile Sections */
+.profile-section,
+.favorites-section,
+.activity-section {
+    background-color: var(--bg-light);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 16px var(--card-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.4s ease-in;
+    text-align: center;
+}
+
+/* Profile Container Layout */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* Added a gap for spacing between the avatar and form */
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 6rem;
+    }
+}
+
+.custom-file-upload {
+    padding: 0.6rem 1.25rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 1.5rem;
+    background: linear-gradient(90deg, #fff6f6 60%, #ffe5d0 100%);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(185, 28, 28, 0.08);
+    transition: var(--transition);
+}
+
+.custom-file-upload:hover {
+    background: var(--secondary-color);
+    color: var(--bg-light);
+}
+
+#avatar-upload {
+    display: none;
+}
+
+/* Form Block */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Your other CSS for .profile-form and its children... */
+
+/* Favorites Section */
+
+/* Favorites Section */
+.favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 0.5rem 0;
+}
+
+.favorite-card {
+    background: linear-gradient(120deg, #fff5e6 60%, #ffe5d0 100%);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 16px rgba(185, 28, 28, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    min-width: 220px;
+    max-width: 350px;
+    width: 100%;
+    transition: var(--transition);
+    position: relative;
+    border: 1.5px solid #ffe5d0;
+}
+
+.favorite-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(185, 28, 28, 0.13);
+    border-color: var(--secondary-color);
+}
+
+.favorite-card img {
+    width: 100%;
+    height: 170px;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(185, 28, 28, 0.10);
+}
+
+.favorite-card p {
+    margin: 0.15rem 0;
+    font-size: 0.98rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Recent Activity Section */
+
+/* Recent Activity Section */
+
+/* Recent Activity Section - List Style */
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.activity-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #f0e6d6;
+    border-radius: 0;
+    padding: 0.85rem 1.25rem;
+    box-shadow: none;
+    transition: var(--transition);
+    min-width: 220px;
+    width: 100%;
+    position: relative;
+}
+
+.activity-card:last-child {
+    border-bottom: none;
+}
+
+.activity-card:hover {
+    background: #fffbe9;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+
+.activity-type {
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.85rem;
+    margin-right: 1.2rem;
+    background-color: #734001;
+    align-self: center;
+    min-width: 70px;
+    text-align: center;
+}
+
+.activity-type.viewed {
+    background-color: #1a73e8;
+}
+
+.activity-type.favorited {
+    background-color: #c26c03;
+}
+
+
+.activity-card h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 0.5rem 0 0;
+    text-align: left;
+    flex: 1 1 auto;
+}
+
+
+.activity-card h4 {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 0 0.5rem 0 0;
+    color: var(--secondary-color);
+    text-align: left;
+    flex: 1 1 auto;
+    background-color: #ffd6ac;
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 4px solid rgb(255, 157, 0);
+    max-width: 200px;
+}
+
+
+.activity-card p {
+    margin: 0 0.5rem 0 0;
+    font-size: 0.97rem;
+    color: #444;
+    text-align: left;
+    flex: 2 1 auto;
+}
+
+
+.activity-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-left: auto;
+    align-self: center;
+}
+
+/* Styling for the overall alert container */
+.custom-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Styling for the content box itself */
+.custom-alert-content {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transform: scale(1);
+  animation: pop-in 0.3s ease-out;
+}
+
+/* Animation for a subtle pop-in effect */
+@keyframes pop-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Styling for the message paragraph */
+.custom-alert-content p {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for the "OK" button */
+.custom-alert-content button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-alert-content button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.custom-alert-content button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}

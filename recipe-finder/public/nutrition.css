@@ -1,0 +1,146 @@
+/* Pro Nutrition Guide Section */
+.pro-nutrition-guide {
+    background: var(--gradient-primary);
+    padding: 4rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.guide-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.guide-content h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+.guide-content p {
+    font-size: 1.1em;
+    color: #fff1f2;
+    line-height: 1.7;
+    margin-bottom: 1.5625rem;
+}
+
+.nutrition-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 1.5625rem 0;
+}
+
+.nutrition-highlights li {
+    font-size: 1.1em;
+    color: #f0f9ff;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.guide-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.guide-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Nutrition Tracker Section */
+.nutrition-tracker {
+    background: linear-gradient(135deg, #ffd0d5 0%, #e8d5fd 100%);
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.nutrition-tracker p {
+    color: var(--text-muted);
+    font-size: 1.1em;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tracker-form {
+    background: var(--bg-light);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    box-shadow: 0 8px 32px var(--card-shadow);
+}
+
+.tracker-form label {
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.tracker-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-sm);
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
+.tracker-form button {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+/* Macro Breakdown Section */
+.macro-breakdown {
+    background: linear-gradient(135deg, #ffddc5 0%, #ffada3 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Micro Guide Section */
+.micro-guide {
+    background: linear-gradient(135deg, #ffddf6 0%, #ffbab8 40%, #f0b8ff 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.nutrient-list-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.source-container {
+    margin-top: 0.625rem;
+}
+
+.source {
+    display: inline-block;
+    background: #f0f9ff;
+    color: #1e40af;
+    font-weight: 700;
+    padding: 0.1875rem 0.4375rem;
+    border-radius: 1.25rem;
+    font-size: 0.7em;
+    margin: 0.125rem 0.25rem;
+    border: 1px solid #dbeafe;
+}
+
+/* Hydration Tips Section */
+.hydration-tips {
+    background: linear-gradient(135deg, #defcf5 0%, #fed1e9 40%, #e9e19b 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+}

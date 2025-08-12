@@ -1,0 +1,153 @@
+/* Community Modal Styles */
+.community-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    backdrop-filter: blur(2px);
+}
+
+.community-modal {
+    background: linear-gradient(90deg, #ffe6d9 0%, #ffb6b6 100%);
+    border-radius: 1.375rem;
+    box-shadow: 0 8px 32px rgba(179, 27, 87, 0.22);
+    padding: 2.25rem 2rem 1.75rem 2rem;
+    max-width: 600px;
+    width: 98vw;
+    position: relative;
+    text-align: left;
+    animation: fadeInModal 0.3s;
+    border: 1.5px solid #f3bcbc;
+    max-height: 90vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-community-modal {
+    position: absolute;
+    top: 0.875rem;
+    right: 1.375rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.community-join-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.community-join-form input,
+.community-join-form select,
+.textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    border: 1px solid #e5e7eb;
+    font-size: 1em;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.community-join-form input:focus,
+.community-join-form select:focus,
+.community-join-form textarea:focus {
+    border: 1.5px solid var(--secondary-color);
+    outline: none;
+}
+
+/* Community Header Section */
+.community-header {
+    background: var(--gradient-primary);
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.community-header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0.625rem;
+}
+
+.community-header p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.community-header h3 {
+    color: #fff;
+}
+
+/* Community Intro Section */
+.community-intro {
+    padding: 4rem 1.5rem;
+    background: linear-gradient(135deg, #ffd3d3 0%, #ffabab 50%, #ff7171 100%);
+    text-align: center;
+}
+
+/* Community Features Section */
+.community-features {
+    background: linear-gradient(135deg, #fdc1cf 0%, #fda1a8 35%, #bc9595 100%);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.meal-planner-tips {
+    text-align: center;
+}
+
+/* Community Members Section */
+.community-members {
+    background: linear-gradient(135deg, #ffc8b4 0%, #ffbdbd 40%, #fa6d6d 100%);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 0.625rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    border: 2px solid var(--accent-border);
+    background-color: var(--bg-light);
+}
+
+.card img:hover {
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

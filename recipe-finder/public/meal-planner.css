@@ -1,0 +1,273 @@
+/* Meal Planner Header Section */
+.meal-planner-header {
+    background: var(--gradient-primary);
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.meal-planner-header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0.625rem;
+}
+
+.meal-planner-header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.subheading {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    color: #fce7f3;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    max-width: 220px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+}
+
+.benefit-card svg {
+    font-size: 2.5rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    color: #ffd6d6;
+}
+
+.cta-container {
+    margin-top: 1.875rem;
+}
+
+/* Meal Planner Form Section */
+.meal-planner-form-section {
+    background: linear-gradient(135deg, #ffceae 0%, #ee8686 100%);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.meal-planner-form {
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: 0 6px 25px rgba(179, 27, 87, 0.12);
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border: 1px solid rgba(179, 27, 87, 0.1);
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.625rem;
+    margin: 0 auto;
+}
+
+/* Meal Planner Tips Section */
+.meal-planner-tips {
+    background: linear-gradient(135deg, #fff1f2 0%, #fce7e9 100%);
+    padding: 3.125rem 1.875rem;
+}
+
+.meal-planner-tips ul {
+    list-style: none;
+    padding: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.meal-planner-tips li {
+    background: var(--bg-light);
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    padding: 1.125rem 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: var(--text-dark);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.meal-planner-tips li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Weekly Plan Section */
+.weekly-plan {
+    background: linear-gradient(135deg, #ffdfdf 0%, #ffd4ec 100%);
+    padding: 3.125rem 1.25rem;
+    text-align: center;
+}
+
+.plan-table {
+    overflow-x: auto;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.plan-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-light);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.plan-table th,
+.plan-table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.plan-table th {
+    background: linear-gradient(135deg, #ffc8c8 0%, #fbe4c3 50%);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.plan-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.plan-table tbody tr:hover {
+    background-color: rgba(214, 146, 62, 0.1);
+}
+
+.plan-table td.breakfast {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.plan-table td.lunch {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.plan-table td.dinner {
+    color: #881337;
+    font-weight: 500;
+}
+
+.plan-table .edit-btn,
+.plan-table .delete-btn {
+    margin-right: 0.5rem;
+}
+
+/* Grocery List Section */
+.grocery-list {
+    background: linear-gradient(135deg, #f0f9ff 0%, #d2b6fe 100%);
+    padding: 3.125rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grocery-list-container {
+    background: var(--bg-light);
+    box-shadow: 0 8px 30px rgba(74, 144, 226, 0.15);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 1300px;
+    border: 1px solid rgba(74, 144, 226, 0.1);
+}
+
+.grocery-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.grocery-item-card {
+    background: var(--bg-light);
+    border: 2px solid #f1f5f9;
+    border-radius: 0.625rem;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: var(--text-dark);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.grocery-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-color: #4A90E2;
+}
+
+.grocery-item-card input[type="checkbox"] {
+    margin-right: 0.9375rem;
+    width: 20px;
+    height: 20px;
+    accent-color: #4A90E2;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.grocery-item-card label {
+    flex-grow: 1;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.grocery-item-card input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.grocery-list .actions {
+    text-align: center;
+    display: flex;
+    gap: 0.9375rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Meal Planner Result */
+.mealplanner-result {
+    margin-top: 1rem;
+    font-size: 1.08rem;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, #f0fff4 0%, #fce7f3 100%);
+    border-radius: 0.8rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #ffd6d6;
+    box-shadow: 0 1px 4px var(--card-shadow);
+    font-weight: 500;
+}
