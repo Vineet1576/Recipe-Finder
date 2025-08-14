@@ -38,7 +38,7 @@ function Contact() {
           <div className="message">
             <h2>Send us a Message</h2>
             <span>
-              📧 <strong>Demo Form:</strong> This is a sample contact form. In a real application, this would send your message to our team.
+              📧 <strong>Have a question or feedback?</strong> <i>"Send us a message and our team will reply within 1–2 business days."</i>
             </span>
             <form onSubmit={async (e) => {
               e.preventDefault();
@@ -81,7 +81,7 @@ function Contact() {
           <div className="contact-info">
             <div className="detailes">
               <h2>Contact Information</h2>
-              <p>"If you have any questions, feel free to reach out to us via email or phone."</p>
+              <span><i>"If you have any questions, feel free to reach out to us via email or phone."</i></span>
               <ul>
                 {contactDetails.map((detail, idx) => (
                   <li key={idx}>{detail.icon} {detail.text}</li>
